@@ -1,11 +1,13 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
+
 import './homepage.scss'
 import Directory from '../../components/directory/directory'
 
 
-const HomePage = () => (
+const HomePage = ({ history }) => (
     <div className='homepage'>
-       <Directory />
+       <Directory history={history} />
     </div>
 )
 
