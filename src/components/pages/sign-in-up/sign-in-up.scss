@@ -1,9 +1,18 @@
-.sign-up {
+.sign-in-and-sign-up {
+  width: 850px;
   display: flex;
-  flex-direction: column;
-  width: 380px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px auto;
+  overflow: hidden;
+}
 
-  .title {
-    margin: 10px 0;
+@media only screen and (max-width: 600px) {
+  .sign-in-and-sign-up {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 0;
+    width: auto;
   }
 }
